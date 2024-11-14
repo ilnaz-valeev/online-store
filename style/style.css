@@ -402,6 +402,75 @@ summary::-webkit-details-marker {
   padding: 15px 39px;
   background-color: #f16d7f;
 }
+
+.advantages {
+  background-color: #222;
+  padding: 104px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.advantages__item {
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.advantages__heading {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FBFBFB;
+}
+
+.advantages__text {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #FBFBFB;
+}
+
+
+
+
+.email__sending {
+    background-image: url("/img/backgroundPhot.png");
+    height: 448px;
+    display: flex;
+
+}
+.email__face {
+}
+.email__quote {
+}
+.email__quote__italic {
+}
+.email__subscribe {
+}
+.email__text {
+}
+.email__text__light {
+}
+.email__field {
+}
+.social__networks {
+}
+.social__text {
+}
+.social__icon {
+}
+.social__icon__block {
+}
+
+
+
+
+
 @media (max-width: 768px) {
   .header__left {
     margin-left: 32px;
