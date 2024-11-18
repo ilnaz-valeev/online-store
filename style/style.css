@@ -424,7 +424,7 @@ summary::-webkit-details-marker {
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
-  color: #FBFBFB;
+  color: #fbfbfb;
 }
 
 .advantages__text {
@@ -432,22 +432,19 @@ summary::-webkit-details-marker {
   font-size: 14px;
   line-height: 17px;
   text-align: center;
-  color: #FBFBFB;
+  color: #fbfbfb;
 }
 
-
-
-
 .email__sending {
-    position: relative;
-    background-image: url("/img/backgroundPhot.png");
-    height: 448px;
-    display: flex;
-text-align: center;
-justify-content: space-around;
-width: 100%;
-background-repeat: no-repeat;
+  position: relative;
+  background-image: url("/img/backgroundPhot.png");
+  background-size: cover;
+  height: 448px;
+  display: flex;
 
+  text-align: center;
+  justify-content: space-around;
+  width: 100%;
 }
 .email__sending::before {
   content: "";
@@ -460,85 +457,85 @@ background-repeat: no-repeat;
   z-index: 0;
 }
 .email__face {
-   margin-top: 48px;
-   z-index: 1;
-   
+  margin-top: 97px;
+  z-index: 1;
+}
+.email__face__img {
+  margin-bottom: 30px;
 }
 .email__quote {
-    width: 320px;
-    font-weight: 400;
-    margin-top: 30px;
-    font-size: 20px;
+  width: 320px;
+  font-weight: 400;
 
+  font-size: 20px;
 }
 .email__quote__italic {
-    font-style: italic;
-    font-size: 20px;
+  font-style: italic;
+  font-size: 20px;
 }
 .email__subscribe {
-    z-index: 1;
-    margin-top: 130px;
-    width: 356px;
-    height: 49px;
-    
-    
+  z-index: 1;
+  margin-top: 130px;
+  height: 49px;
 }
 .email__text {
-    margin-bottom: 32px;
-    font-weight: 700;
-    font-size: 24px;
-        
+  margin-bottom: 32px;
+  font-weight: 700;
+  font-size: 24px;
 }
 .email__text__light {
-    font-weight: 400;
-    font-size: 18px;
+  font-weight: 400;
+  font-size: 18px;
 }
 .email__field {
-    padding: 0px 0px 0px 20px;
-    height: 49px;
-    
-    border-radius: 30px 0px 0px 30px;
-    border: none;
-    background-color:  #e1e1e1;;
+  padding: 0px 0px 0px 20px;
+  height: 49px;
+  border-radius: 30px 0px 0px 30px;
+  border: none;
+  background-color: #e1e1e1;
 }
-.email__field__button{
-    padding: 0px 7px 0px 8px;
-    color: #fff;
-    width: 100px;
-    height: 49px;
-    border-radius: 0px 30px 30px 0px;
-    border: none;
-    background-color:  #f16d7f;
-    cursor: pointer;
+.email__field__button {
+  padding: 0px 7px 0px 8px;
+  color: #fff;
+  width: 100px;
+  height: 49px;
+  border-radius: 0px 30px 30px 0px;
+  border: none;
+  background-color: #f16d7f;
+  cursor: pointer;
 }
 .social__networks {
-    height: 79px;
-    background-color: #222224;
-    color: #fff;
-    display:flex ;
-    justify-content: space-around;
+  height: 79px;
+  background-color: #222224;
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
 }
 .social__text {
-    margin-top: 30px;
+  margin-top: 30px;
 }
 .social__icon {
-    
+  display: flex;
+  text-align: center;
+  align-items: center;
+  gap: 8px;
 }
-.social__icon img{
-
+.social__icon img {
 }
-.background__block{
-    background-color: #fff;
-    width: 31px;
-    height: 32px;
+.background__block {
+  background-color: #fff;
+  width: 31px;
+  height: 32px;
 }
 .social__icon__block {
-
+  width: 32px;
+  height: 32px;
+  align-content: center;
+  background-color: #fff;
+  cursor: pointer;
 }
-
-
-
-
+.social__icon__block:hover {
+}
 
 @media (max-width: 768px) {
   .header__left {
@@ -581,39 +578,34 @@ background-repeat: no-repeat;
   }
   .product {
   }
-  .advantage{
-    
-    
+  .advantages {
   }
-  .advantages__item{
+  .advantages__item {
     grid-template-columns: 1fr 1fr;
   }
 
-.email__sending {
+  .email__sending {
     display: grid;
     height: 614px;
-    justify-content: center;
-   
-    
-}
-.email__face {
-    
-}
-.email__quote {
-}
-.email__quote__italic {
-}
-.email__subscribe {
-    margin-top:1px;
-}
-.email__text {
-}
-.email__text__light {
-}
-.email__field {
-}
-.email__field__button {
-}
+  }
+  .email__face {
+  }
+  .email__quote {
+  }
+  .email__quote__italic {
+  }
+  .email__subscribe {
+    margin-top: 1px;
+    height: auto;
+  }
+  .email__text {
+  }
+  .email__text__light {
+  }
+  .email__field {
+  }
+  .email__field__button {
+  }
 }
 
 @media (max-width: 426px) {
@@ -661,7 +653,45 @@ background-repeat: no-repeat;
   .browse-all__button {
     margin-bottom: 85px;
   }
+  .advantages {
+  }
+  .advantages__item {
+    padding: 0px 18px 0 18px;
+  }
+  .advantages__heading {
+    font-size: 19px;
+  }
+  .advantages__text {
+    font-size: 13px;
+  }
+  .email__quote {
+    font-size: 18px;
+  }
+  .email__quote__italic {
+    font-size: 18px;
+  }
+  .email__text {
+    font-size: 24px;
+  }
+  .email__text__light {
+    font-size: 14px;
+  }
+  .social__networks {
+    flex-direction: column-reverse;
+    height: 143px;
+  }
+  .social__text {
+    margin-top: 0px;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 9px;
+  }
+  .social__icon {
+    margin-top: 43px;
+    justify-content: center;
+  }
 }
+
 @media (max-width: 320px) {
   .product__add {
     top: 150px;
