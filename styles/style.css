@@ -13,6 +13,7 @@ img {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 summary {
@@ -71,41 +72,67 @@ summary::-webkit-details-marker {
     line-height: 29px;
     color: #F16D7F;
 }
+
 .breadcrumb{
     display: flex;
     gap: 8px;
 }
 .breadcrumb__link{
     text-decoration: none;
+    color: #636363
 }
-.slider{
+.pink__a{
+    color: #F16D7F;
+}
+.slider {
+    position: relative;
     display: flex;
     justify-content: center;
     background-color: #f7f7f7;
-    
 }
-.slider__arrow{
+
+.slider__arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); /* Центрируем по вертикали */
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    background-color: rgba(42, 42, 42, 0.15); /* Полупрозрачный фон для стрелок */
+    padding: 10px 15px;
+    z-index: 10;  /* Чтобы стрелки были сверху */
 }
-.slider__arrow_right{
-    right: 0;
-}
-.content{
 
+.slider__arrow_left {
+    left: 0px;  /* Отступ от левого края */
+}
+
+.slider__arrow_right {
+    right: 0px;  /* Отступ от правого края */
+}
+
+.slider__arrow img {
+    width: 13px;  /* Устанавливаем размер стрелки */
+    height: 21px;
+}
+
+.content {
     display: flex; 
     flex-direction: column; 
     align-items: center; 
     justify-content: center; 
     text-align: center; 
-    max-width: 1141px; 
-    margin: 0 auto; 
+    max-width: 1100px; 
+    margin: -60px auto 0 auto;  /* Это наезжает на слайдер */
     padding: 0 20px; 
     text-align: center;
-    max-width: 1141px;
-    
+    position: relative;  /* Добавляем относительное позиционирование */
+    background-color: #fff;
+    border: 1px solid rgba(94, 94, 94, 0.3);
+
+
 }
+
 .content h3{
     font-weight: 300;
     font-size: 14px;
@@ -178,12 +205,23 @@ display: flex;
     align-items: center;
     outline: none;
     height: 48px;
-
+    margin-bottom: 65px;
+    transition: none;  
     
+}
+
+.button__basket:active {
+    transform: none;   /* Отключаем анимацию transform */
+    box-shadow: none;  /* Отключаем тень при клике */
+    background-color: transparent;  /* Отключаем изменение фона */
+    outline: none;  /* Убираем стандартный контур при фокусе */
 }
 .button__basket__img{
 
     margin: 15px 23px 15px 23px;
+}
+.arrow_color:hover{
+    background-color: #ef5b70;
 }
 .content span{
     margin-right: 57px;
@@ -385,10 +423,11 @@ display: flex;
   align-content: center;
   background-color: #fff;
   cursor: pointer;
+  
 }
-.social__icon__block:hover {
+.social__icon__block:hover svg path {
+  fill: #F16D7F; 
 }
-
 
 
 
@@ -402,6 +441,13 @@ display: flex;
   }
   .header__right {
     margin-right: 32px;
+  }
+  .head__heading{
+    margin-left: 16px;
+
+  }
+  .breadcrumb__link{
+    margin-right: 16px;
   }
   .product-box__content {
     margin-top: 72px;
@@ -451,6 +497,15 @@ display: flex;
 @media (max-width: 426px) {
   .header__link-site {
     display: none;
+  }
+  .head{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .breadcrumb{
+    margin-top: 32px;
   }
   .product-box__content {
     grid-template-columns: 1fr;
