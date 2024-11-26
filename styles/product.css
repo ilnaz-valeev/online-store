@@ -76,6 +76,7 @@ summary::-webkit-details-marker {
 .breadcrumb{
     display: flex;
     gap: 8px;
+    font-weight: 300;
 }
 .breadcrumb__link{
     text-decoration: none;
@@ -83,6 +84,7 @@ summary::-webkit-details-marker {
 }
 .pink__a{
     color: #F16D7F;
+    font-weight: 400;
 }
 .slider {
     position: relative;
@@ -115,6 +117,9 @@ summary::-webkit-details-marker {
     width: 13px;  /* Устанавливаем размер стрелки */
     height: 21px;
 }
+.slider__arrow:hover svg path{
+    fill: #f16d7f;
+}
 
 .content {
     display: flex; 
@@ -135,7 +140,7 @@ summary::-webkit-details-marker {
 
 .content h3{
     font-weight: 300;
-    font-size: 14px;
+font-size: 14px;
     margin: 65px 0px 12px 0px ;
     color: #f16d7f;;
 }
@@ -153,8 +158,8 @@ summary::-webkit-details-marker {
     margin-bottom:49px ;
 }
 .content__text{
-    font-weight: 300;
-    font-size: 14px;
+font-weight: 300;
+font-size: 14px;
     text-align: center;
     color: #5e5e5e;
     margin-bottom: 32px;
@@ -165,12 +170,13 @@ summary::-webkit-details-marker {
     color: #ef5b70;
     margin-bottom: 65px;
 }
-.content__line-big{
-    max-width: 642px;
+.content__line-big {
+    width: 642px;  
     height: 1px;
     background-color: #eaeaea;
     margin-bottom: 65px;
 }
+
 
 .sort{
     display: flex;
@@ -185,6 +191,7 @@ summary::-webkit-details-marker {
 .sort__summary{
     display: flex;
     justify-content: center;
+    font-weight: 400;
     align-items: center;
     cursor: pointer;
 }
@@ -198,10 +205,10 @@ display: flex;
     font-weight: 400;
     font-size: 16px;
     background-color: #fff;
-    color: #f26376;
+    color: #f16d7f;
     cursor: pointer;
-    border-color: #ff6a6a;
-        justify-content: center;
+    border: 2px solid #f16d7f;
+    justify-content: center;
     align-items: center;
     outline: none;
     height: 48px;
@@ -225,6 +232,7 @@ display: flex;
 }
 .content span{
     margin-right: 57px;
+    font-weight: 400;
 }
 
 
@@ -450,6 +458,9 @@ display: flex;
   .breadcrumb__link{
     margin-right: 16px;
   }
+.slider{
+   
+}
   .product-box__content {
     margin-top: 72px;
     grid-template-columns: 1fr 1fr;
@@ -505,6 +516,13 @@ display: flex;
     align-items: center;
     
   }
+  .content__line-big{
+    width: 175px;
+  }
+  .sort__summary{
+    font-size: 10px;
+  }
+
   .breadcrumb{
     margin-top: 32px;
   }
@@ -546,5 +564,8 @@ display: flex;
   .product__add {
     top: 150px;
     left: 80px;
+  }
+.sort__details img{
+    padding-left: 2px;
   }
 }
