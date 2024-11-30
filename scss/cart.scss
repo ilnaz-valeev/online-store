@@ -120,6 +120,7 @@ summary::-webkit-details-marker {
       
     }
   }
+
   .cart__left-column {
     position: relative;
     box-shadow: 17px 19px 24px 0 rgba(0, 0, 0, 0.13);
@@ -133,6 +134,27 @@ summary::-webkit-details-marker {
   .cart__right-column {
 
   }
+
+
+  &__button{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 72px;
+
+  }
+  &__button button{
+    font-weight: 300;
+    font-size: 14px;
+    color: #575757;
+    padding: 17px 41px 16px 39px;
+    background-color: #fff;
+    border: 1px solid #575757;
+    cursor: pointer;
+    
+  }
+
+
+  
 
 }
 // Стили для товара
