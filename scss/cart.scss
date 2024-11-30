@@ -59,7 +59,7 @@ summary::-webkit-details-marker {
 
 .head {
   min-height: 148px;
-  background: #F8F3F4;
+  background: #f8f3f4;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -70,9 +70,188 @@ summary::-webkit-details-marker {
     font-weight: 400;
     font-size: 24px;
     line-height: 29px;
-    color: #F16D7F;
+    color: #f16d7f;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+// Основные переменные
+
+
+// Стили для основного контейнера корзины
+.cart {
+    
+    position: relative;
+    margin-top: 96px;
+    margin-bottom:250px ;
+    width: 652px;
+
+
+
+    
+    &__close-btn {
+    position: absolute; // Позиционируем относительно секции cart
+    top: 10px; // Отступ сверху
+    right: 10px; // Отступ справа
+    background: transparent; // Без фона
+    border: none; // Без границы
+    padding: 0; // Убираем внутренние отступы
+    cursor: pointer; // Указатель на кнопку
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+    
+    svg {
+      width: 18px;  
+      height: 18px;
+      fill: #575757;  // Цвет крестика
+      
+    }
+  }
+  .cart__left-column {
+    position: relative;
+    box-shadow: 17px 19px 24px 0 rgba(0, 0, 0, 0.13);
+
+  }
+  .cart__left-column__two{
+    margin-top: 40px;
+    box-shadow: 17px 19px 24px 0 rgba(0, 0, 0, 0.13);
+  }
+
+  .cart__right-column {
+
+  }
+
+}
+// Стили для товара
+.cart-item {
+  display: flex;
+  align-items: center; // Выравнивание по вертикали
+  .cart-item__image {
+    flex-shrink: 0; // Изображение не сжимается
+    width: 262px; // Устанавливаем фиксированную ширину изображения
+    height: auto; // Автоматическая высота
+    margin-right: 20px; // Отступ от текста
+  }
+  // Стили для изображения товара
+  .cart-item__image {
+ background-color: #F3EEEF;
+  }
+
+  // Стили для контейнера текста
+  .cart-item__details {
+    display: flex;
+    flex-direction: column; // Текст в колонку
+    width: 100%; // Текст занимает оставшееся пространство
+    color: #6f6e6e;
+    font-size: 22px;
+    
+
+    .cart-item__title {
+        color: #222;
+        font-size: 24px;
+        font-weight: 400;
+    }
+
+    .cart-item__attributes {
+        list-style: none;
+        margin-top: 42px;
+      
+      .cart-item__attribute {
+        margin-top: 6px;
+        display: flex;
+
+        &--highlight {
+            color: #ef5b70;
+            margin-left: 6px;
+        }
+      }
+    }
+  }
+
+}
+
+
+  .cart-item__image-additional {
+
+    img {
+
+    }
+  }
+
+
+  
+// Управление количеством товара
+.quantity-control {
+   margin-left: 24px;
+  
+
+  
+  .quantity-control__decrease,
+  .quantity-control__increase {
+    cursor: pointer;
+
+    &:hover {
+     
+    }
+  }
+
+  .quantity-control__value {
+    border: 2px solid #eaeaea;; 
+    padding: 1px 17px;
+  }
+}
+
+// Стили для кнопок действий в корзине
+.cart__actions {
+
+
+  button {
+
+
+    &:hover {
+      
+    }
+
+    &:focus {
+      
+    }
+  }
+}
+
+// Стили для правой колонки (например, для итоговой суммы или данных о доставке)
+.cart__right-column {
+
+
+  .cart__total {
+
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -87,23 +266,23 @@ summary::-webkit-details-marker {
   justify-content: space-around;
   width: 100%;
   &::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(244, 244, 244, 0.7);
-  z-index: 0;
-}
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(244, 244, 244, 0.7);
+    z-index: 0;
+  }
 }
 
 .email__face {
   margin-top: 97px;
   z-index: 1;
   &__img {
-  margin-bottom: 30px;
-}
+    margin-bottom: 30px;
+  }
 }
 
 .email__quote {
@@ -112,9 +291,9 @@ summary::-webkit-details-marker {
 
   font-size: 20px;
   &__italic {
-  font-style: italic;
-  font-size: 20px;
-}
+    font-style: italic;
+    font-size: 20px;
+  }
 }
 
 .email__subscribe {
@@ -127,9 +306,9 @@ summary::-webkit-details-marker {
   font-weight: 700;
   font-size: 24px;
   &__light {
-  font-weight: 400;
-  font-size: 18px;
-}
+    font-weight: 400;
+    font-size: 18px;
+  }
 }
 
 .email__field {
@@ -139,15 +318,15 @@ summary::-webkit-details-marker {
   border: none;
   background-color: #e1e1e1;
   &__button {
-  padding: 0px 7px 0px 8px;
-  color: #fff;
-  width: 100px;
-  height: 49px;
-  border-radius: 0px 30px 30px 0px;
-  border: none;
-  background-color: #f16d7f;
-  cursor: pointer;
-}
+    padding: 0px 7px 0px 8px;
+    color: #fff;
+    width: 100px;
+    height: 49px;
+    border-radius: 0px 30px 30px 0px;
+    border: none;
+    background-color: #f16d7f;
+    cursor: pointer;
+  }
 }
 
 .social__networks {
@@ -166,16 +345,15 @@ summary::-webkit-details-marker {
   align-items: center;
   gap: 8px;
   &__block {
-  width: 32px;
-  height: 32px;
-  align-content: center;
-  background-color: #fff;
-  cursor: pointer;
+    width: 32px;
+    height: 32px;
+    align-content: center;
+    background-color: #fff;
+    cursor: pointer;
     &:hover svg path {
-    fill: #F16D7F; 
-}
-}
-
+      fill: #f16d7f;
+    }
+  }
 }
 .background__block {
   background-color: #fff;
