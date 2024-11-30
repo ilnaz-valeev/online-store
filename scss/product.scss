@@ -42,21 +42,22 @@ summary::-webkit-details-marker {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-}
-
-.header__left,
-.header__right {
+  &__left,
+    &__right {
   display: flex;
   align-items: center;
 }
 
-.header__left {
+&__left {
   gap: 41px;
 }
 
-.header__right {
+&__right {
   gap: 33px;
 }
+}
+
+
 .head{
     min-height: 148px;
     background: #F8F3F4;
@@ -64,24 +65,26 @@ summary::-webkit-details-marker {
     align-items: center;
     justify-content: space-between;
     text-decoration: none;
-}
-.head__heading{
+    &__heading{
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
     line-height: 29px;
     color: #F16D7F;
 }
+}
+
 
 .breadcrumb{
     display: flex;
     gap: 8px;
     font-weight: 300;
-}
-.breadcrumb__link{
+    &__link{
     text-decoration: none;
     color: #636363
 }
+}
+
 .pink__a{
     color: #F16D7F;
     font-weight: 400;
@@ -91,9 +94,8 @@ summary::-webkit-details-marker {
     display: flex;
     justify-content: center;
     background-color: #f7f7f7;
-}
-
-.slider__arrow {
+    
+&__arrow {
     position: absolute;
     top: 50%;
     transform: translateY(-50%); /* Центрируем по вертикали */
@@ -105,21 +107,23 @@ summary::-webkit-details-marker {
     z-index: 10;  /* Чтобы стрелки были сверху */
 }
 
-.slider__arrow_left {
-    left: 0px;  /* Отступ от левого края */
+&__arrow_left {
+    left: 0px;  
 }
 
-.slider__arrow_right {
-    right: 0px;  /* Отступ от правого края */
+&__arrow_right {
+    right: 0px;  
 }
 
-.slider__arrow img {
-    width: 13px;  /* Устанавливаем размер стрелки */
+&__arrow img {
+    width: 13px; 
     height: 21px;
 }
-.slider__arrow:hover svg path{
+&__arrow:hover svg path{
     fill: #f16d7f;
 }
+}
+
 
 .content {
     display: flex; 
@@ -134,48 +138,48 @@ summary::-webkit-details-marker {
     position: relative;  /* Добавляем относительное позиционирование */
     background-color: #fff;
     border: 1px solid rgba(94, 94, 94, 0.3);
-
-
-}
-
-.content h3{
+    & h3{
     font-weight: 300;
 font-size: 14px;
     margin: 65px 0px 12px 0px ;
     color: #f16d7f;;
 }
-.content__line{
+&__line{
     text-align: center;
     width: 63px;
     height: 4px;
     background-color: #ef5b70;;
     margin-bottom: 12px;
 }
-.content__heading{
+&__heading{
     font-weight: 300;
     font-size: 18px;
     color: #4d4d4d;
     margin-bottom:49px ;
 }
-.content__text{
+&__text{
 font-weight: 300;
 font-size: 14px;
     text-align: center;
     color: #5e5e5e;
     margin-bottom: 32px;
 }
-.content__price{
+&__price{
     font-weight: 300;
     font-size: 24px;
     color: #ef5b70;
     margin-bottom: 65px;
 }
-.content__line-big {
+&__line-big {
     width: 642px;  
     height: 1px;
     background-color: #eaeaea;
     margin-bottom: 65px;
 }
+
+}
+
+
 
 
 .sort{
@@ -186,22 +190,21 @@ font-size: 14px;
     font-weight: 400;
     font-size: 14px;
     color: #6f6e6e;
-   
-}
-.sort__summary{
+   &__summary{
     display: flex;
     justify-content: center;
     font-weight: 400;
     align-items: center;
     cursor: pointer;
 }
-.sort__details img{
+&__details img{
     text-align: center;
     padding-left: 9px;
 }
+}
+
 .button__basket{
-    
-display: flex;
+    display: flex;
     font-weight: 400;
     font-size: 16px;
     background-color: #fff;
@@ -214,19 +217,19 @@ display: flex;
     height: 48px;
     margin-bottom: 65px;
     transition: none;  
-    
-}
-
-.button__basket:active {
+    &:active {
     transform: none;   /* Отключаем анимацию transform */
     box-shadow: none;  /* Отключаем тень при клике */
     background-color: transparent;  /* Отключаем изменение фона */
     outline: none;  /* Убираем стандартный контур при фокусе */
 }
-.button__basket__img{
+&__img{
 
     margin: 15px 23px 15px 23px;
 }
+}
+
+
 .arrow_color:hover{
     background-color: #ef5b70;
 }
@@ -240,16 +243,15 @@ display: flex;
 
 .product-box {
   padding-bottom: 96px;
-}
-
-.product-box__heading {
+  
+&__heading {
   font-size: 30px;
   line-height: 36px;
   text-align: center;
   color: #222222;
 }
 
-.product-box__text {
+&__text {
   font-size: 14px;
   line-height: 17px;
   text-align: center;
@@ -257,34 +259,34 @@ display: flex;
   color: #9f9f9f;
 }
 
-.product-box__content {
+&__content {
   margin-top: 48px;
   display: grid;
   grid-template-columns: repeat(auto-fit, 360px);
   justify-content: center;
   gap: 30px;
 }
+}
+
 
 .product {
   position: relative;
-}
-
-.product:hover .product__img {
+  &:hover .product__img {
   filter: brightness(0.5);
 }
 
-.product:hover .product__add {
+&:hover .product__add {
   display: flex;
 }
 
-.product__img {
+&__img {
   width: 100%;
 }
-.product__content__girl {
+&__content__girl {
   background-color: #f8f8f8;
 }
 
-.product__add {
+&__add {
   position: absolute;
   top: 188px;
   left: 111px;
@@ -298,11 +300,11 @@ display: flex;
   color: #ffffff;
 }
 
-.product__add:hover {
+&__add:hover {
   box-shadow: 0 0 5px #fff;
 }
 
-.product__content {
+&__content {
   background: #f8f8f8;
   display: flex;
   flex-direction: column;
@@ -312,24 +314,27 @@ display: flex;
   gap: 16px;
 }
 
-.product__heading {
+&__heading {
   font-size: 13px;
   line-height: 16px;
   color: #000000;
 }
 
-.product__text {
+&__text {
   font-weight: 300;
   font-size: 14px;
   line-height: 17px;
   color: #5d5d5d;
 }
 
-.product__price {
+&__price {
   font-size: 16px;
   line-height: 19px;
   color: #f16d7f;
 }
+}
+
+
 
 
 
@@ -343,8 +348,7 @@ display: flex;
   text-align: center;
   justify-content: space-around;
   width: 100%;
-}
-.email__sending::before {
+  &::before {
   content: "";
   position: absolute;
   top: 0;
@@ -354,23 +358,27 @@ display: flex;
   background-color: rgba(244, 244, 244, 0.7);
   z-index: 0;
 }
+}
+
 .email__face {
   margin-top: 97px;
   z-index: 1;
-}
-.email__face__img {
+  &__img {
   margin-bottom: 30px;
 }
+}
+
 .email__quote {
   width: 320px;
   font-weight: 400;
 
   font-size: 20px;
-}
-.email__quote__italic {
+  &__italic {
   font-style: italic;
   font-size: 20px;
 }
+}
+
 .email__subscribe {
   z-index: 1;
   margin-top: 130px;
@@ -380,19 +388,19 @@ display: flex;
   margin-bottom: 32px;
   font-weight: 700;
   font-size: 24px;
-}
-.email__text__light {
+  &__light {
   font-weight: 400;
   font-size: 18px;
 }
+}
+
 .email__field {
   padding: 0px 0px 0px 20px;
   height: 49px;
   border-radius: 30px 0px 0px 30px;
   border: none;
   background-color: #e1e1e1;
-}
-.email__field__button {
+  &__button {
   padding: 0px 7px 0px 8px;
   color: #fff;
   width: 100px;
@@ -402,6 +410,8 @@ display: flex;
   background-color: #f16d7f;
   cursor: pointer;
 }
+}
+
 .social__networks {
   height: 79px;
   background-color: #222224;
@@ -417,24 +427,22 @@ display: flex;
   text-align: center;
   align-items: center;
   gap: 8px;
-}
-.social__icon img {
-}
-.background__block {
-  background-color: #fff;
-  width: 31px;
-  height: 32px;
-}
-.social__icon__block {
+  &__block {
   width: 32px;
   height: 32px;
   align-content: center;
   background-color: #fff;
   cursor: pointer;
-  
+    &:hover svg path {
+    fill: #F16D7F; 
 }
-.social__icon__block:hover svg path {
-  fill: #F16D7F; 
+}
+
+}
+.background__block {
+  background-color: #fff;
+  width: 31px;
+  height: 32px;
 }
 
 
@@ -532,16 +540,18 @@ display: flex;
 
   .email__quote {
     font-size: 18px;
-  }
-  .email__quote__italic {
+    &__italic {
     font-size: 18px;
   }
+  }
+  
   .email__text {
     font-size: 24px;
-  }
-  .email__text__light {
+    &__light {
     font-size: 14px;
   }
+  }
+
   .social__networks {
     flex-direction: column-reverse;
     height: 143px;
