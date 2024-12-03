@@ -418,15 +418,16 @@ summary::-webkit-details-marker {
     background-color: rgba(244, 244, 244, 0.7);
     z-index: 0;
   }
-}
-
-.email__face {
+  &__face {
   margin-top: 97px;
   z-index: 1;
   &__img {
     margin-bottom: 30px;
   }
 }
+}
+
+
 
 .email__quote {
   width: 320px;
@@ -661,12 +662,18 @@ summary::-webkit-details-marker {
   .head center{
     text-align: center;
   }
+    .head__heading {
+    text-align: center; /* Центрируем текст */
+    margin-left: 0;     /* Убираем отступ слева */
+    margin-right: 0;    /* Убираем отступ справа */
+    width: 100%;        /* Делаем ширину элемента на 100% */
+  }
 
 
 
 
   .cart{
-    margin: 59px 0px 96px 0px;
+    margin: 39px 0px 96px 0px;
   }
 .cart-item{
     width: 358px;
@@ -701,7 +708,16 @@ summary::-webkit-details-marker {
     height: 33px;
     font-size: 12px;
     text-align: center;
-    padding-bottom: 10px;
+    
+
+    padding: 17px 21px 16px 39px;
+    display: flex;      /* Используем flex для более гибкого выравнивания */
+    justify-content: center; /* Центрируем содержимое кнопки */
+    align-items: center;     /* Центрируем содержимое кнопки по вертикали */
+   
+
+
+    
 }
 
   .cart__shipping-address {
@@ -709,10 +725,14 @@ summary::-webkit-details-marker {
     align-items: flex-start; 
     margin-left: 16px;
     order: 2;
-    width: 100%; 
+  
+     margin: 0 auto;
     margin-top: 48px;
     
     
+  }
+  .cart .cart__left-column__two{
+    margin-bottom: 0;
   }
 
   .shipping-address__field {
@@ -720,7 +740,7 @@ summary::-webkit-details-marker {
     margin-bottom: 0; 
   }
 
-  .shipping-address__rectangle {
+  .cart .shipping-address__rectangle {
     background-color: #f5f3f3;
     width: 360px;
     height: 214px;
