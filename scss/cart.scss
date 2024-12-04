@@ -55,6 +55,9 @@ summary::-webkit-details-marker {
   &__right {
     gap: 33px;
   }
+  &__right img {
+    cursor: pointer;
+  }
 }
 
 .head {
@@ -74,60 +77,40 @@ summary::-webkit-details-marker {
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 .cart {
-    
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  gap: 20px;
+
+  // position: relative;
+  // margin-top: 96px;
+  // margin-bottom: 250px;
+  // width: 652px;
+  // display: flex;
+  // justify-content: space-between;
+
+  &__left {
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    width: 100%;
-    max-width: 1200px; 
-    margin: 0 auto;
-    padding: 20px;
-    gap: 20px; 
-
-    // position: relative;
-    // margin-top: 96px;
-    // margin-bottom: 250px;
-    // width: 652px;
-    // display: flex;
-    // justify-content: space-between;
-
-
-    
-
-
-
-
-    &__left {
-            display: flex;
     flex-direction: column;
     align-items: center;
     max-width: 652px;
     flex: 1;
-        
-    }
-    .cart__left-column,
-.cart__left-column__two {
+  }
+  .cart__left-column,
+  .cart__left-column__two {
     max-width: 652px;
     width: 100%;
     position: relative;
     margin-bottom: 20px;
     box-shadow: 17px 19px 24px 0 rgba(0, 0, 0, 0.13);
-}
-    
-.cart__close-btn {
+  }
+
+  .cart__close-btn {
     position: absolute;
     top: 10px;
     right: 10px;
@@ -137,266 +120,243 @@ summary::-webkit-details-marker {
     cursor: pointer;
 
     svg {
-        width: 18px;
-        height: 18px;
-        fill: #575757;
+      width: 18px;
+      height: 18px;
+      fill: #575757;
     }
-}
+  }
 
-    &__left-column {
-        position: relative;
-        box-shadow: 17px 19px 24px 0 rgba(0, 0, 0, 0.13);
+  &__left-column {
+    position: relative;
+    box-shadow: 17px 19px 24px 0 rgba(0, 0, 0, 0.13);
+  }
+
+  &__left-column__two {
+    margin-top: 40px;
+    box-shadow: 17px 19px 24px 0 rgba(0, 0, 0, 0.13);
+  }
+
+  &__right-column {
+  }
+
+  &__button {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 72px;
+  }
+
+  &__button button {
+    font-weight: 300;
+    font-size: 14px;
+    color: #575757;
+    padding: 17px 31px 16px 39px;
+    background-color: #fff;
+
+    cursor: pointer;
+    width: 235px;
+    height: 50px;
+    border: 1px solid #a4a4a4;
+  }
+  .cart__button__left {
+    margin-right: 192px;
+    padding: 17px 21px 16px 39px;
+  }
+
+  &__shipping-address {
+    max-width: 652px;
+    margin-left: 128px;
+    flex: 1;
+  }
+
+  .shipping-address__field {
+  }
+
+  .shipping-address__header {
+    margin-bottom: 20px;
+    font-weight: 300;
+    font-size: 16px;
+    color: #222;
+  }
+
+  .shipping-address__input {
+    padding: 13px 16px;
+    width: 360px;
+    font-weight: 300;
+    font-size: 13px;
+    color: #222;
+    margin-bottom: 20px;
+    border: 1px solid #a4a4a4;
+    &:focus {
+      border-color: #a4a4a4;
+      outline: none;
     }
-    
-    &__left-column__two {
-        margin-top: 40px;
-        box-shadow: 17px 19px 24px 0 rgba(0, 0, 0, 0.13);
+  }
+
+  .shipping-address__submit-button {
+    padding: 11px 15px;
+    color: #4a4a4a;
+    background-color: #fff;
+    font-weight: 300;
+    font-size: 11px;
+    color: #4a4a4a;
+    border: 1px solid #a4a4a4;
+    cursor: pointer;
+  }
+
+  .shipping-address__rectangle {
+    background-color: #f5f3f3;
+    width: 360px;
+    height: 214px;
+    text-align: end;
+    margin-top: 57px;
+
+    .sub__total {
+      font-weight: 400;
+      font-size: 11px;
+      color: #4a4a4a;
+      margin-bottom: 12px;
+      padding-top: 39px;
+      margin-right: 37px;
+
+      .amount {
+        margin-left: 25px;
+      }
     }
 
-    &__right-column {
-        
+    .grand__total {
+      font-weight: 300;
+      font-size: 16px;
+      color: #222;
+      margin-right: 37px;
+
+      .amount {
+        font-weight: 700;
+        color: #f16d7f;
+        margin-left: 25px;
+      }
     }
 
-    &__button {
-        display: flex;
-        justify-content: space-between;
-        margin-top: 72px;
+    .mini__line {
+      background-color: #e2e2e2;
+      width: 275px;
+      height: 1px;
+      margin-bottom: 17px;
+      margin-top: 17px;
+      margin-left: 50px;
     }
 
-    &__button button {
-        font-weight: 300;
-        font-size: 14px;
-        color: #575757;
-        padding: 17px 31px 16px 39px;
-        background-color: #fff;
-        border: 1px solid #575757;
-        cursor: pointer;
-        width: 235px;
-        height: 50px;
-
+    .proceed__checkout {
+      width: 273px;
+      height: 50px;
+      border: none;
+      background-color: #f16d7f;
+      font-weight: 300;
+      font-size: 16px;
+      color: #fff;
+      cursor: pointer;
+      margin-right: 37px;
     }
-    .cart__button__left{
-        margin-right: 192px;
-        padding: 17px 21px 16px 39px;
-    }
-
-
-
-    &__shipping-address {
-        
-        max-width: 652px;
-        margin-left: 128px;
-        flex: 1;
-    }
-
-    .shipping-address__field {
-        
-    }
-
-    .shipping-address__header {
-        margin-bottom: 20px;
-        font-weight: 300;
-        font-size: 16px;
-        color: #222;
-    }
-
-    .shipping-address__input {
-        padding: 13px 16px;
-        width: 360px;
-        font-weight: 300;
-        font-size: 13px;
-        color: #222;
-        margin-bottom: 20px;
-        border: 1px solid #575757;
-    }
-
-    .shipping-address__submit-button {
-        padding: 11px 15px;
-        color: #4a4a4a;
-        background-color: #fff;
-        font-weight: 300;
-        font-size: 11px;
-        color: #4a4a4a;
-        border: 1px solid #575757;
-        cursor: pointer;
-    }
-
-    .shipping-address__rectangle {
-        background-color: #f5f3f3;
-        width: 360px;
-        height: 214px;
-        text-align: end;
-        margin-top: 57px;
-        
-        .sub__total {
-            font-weight: 400;
-            font-size: 11px;
-            color: #4a4a4a;
-            margin-bottom: 12px;
-            padding-top: 39px;
-            margin-right: 37px;
-            
-            .amount {
-                margin-left: 25px;
-            }
-        }
-
-        .grand__total {
-            font-weight: 300;
-            font-size: 16px;
-            color: #222;
-            margin-right: 37px;
-            
-            .amount {
-                font-weight: 700;
-                color: #f16d7f;
-                margin-left: 25px;
-            }
-        }
-
-        .mini__line {
-            background-color: #e2e2e2;
-            width: 275px;
-            height: 1px;
-            margin-bottom: 17px;
-            margin-top: 17px;
-            margin-left: 50px;
-        }
-
-        .proceed__checkout {
-            width: 273px;
-            height: 50px;
-            border: none;
-            background-color: #f16d7f;
-            font-weight: 300;
-            font-size: 16px;
-            color: #fff;
-            cursor: pointer;
-            margin-right: 37px;
-        }
-    }
+  }
 }
 
 // Стили для товара в корзине
 .cart-item {
+  display: flex;
+  align-items: center;
+
+  .cart-item__image {
+    flex-shrink: 0;
+    width: 262px;
+    height: auto;
+    margin-right: 20px;
+    background-color: #f3eeef;
+  }
+
+  .cart-item__details {
     display: flex;
-    align-items: center;  
-    
-    .cart-item__image {
-        flex-shrink: 0;  
-        width: 262px;  
-        height: auto;  
-        margin-right: 20px;  
-        background-color: #F3EEEF; 
+    flex-direction: column;
+    width: 100%;
+    color: #6f6e6e;
+    font-size: 22px;
+
+    .cart-item__title {
+      color: #222;
+      font-size: 24px;
+      font-weight: 400;
     }
 
-    .cart-item__details {
+    .cart-item__attributes {
+      list-style: none;
+      margin-top: 42px;
+
+      .cart-item__attribute {
+        margin-top: 6px;
         display: flex;
-        flex-direction: column;  
-        width: 100%;  
-        color: #6f6e6e;
-        font-size: 22px;
-        
-        .cart-item__title {
-            color: #222;
-            font-size: 24px;
-            font-weight: 400;
-        }
 
-        .cart-item__attributes {
-            list-style: none;
-            margin-top: 42px;
-            
-            .cart-item__attribute {
-                margin-top: 6px;
-                display: flex;
-
-                &--highlight {
-                    color: #ef5b70;
-                    margin-left: 6px;
-                }
-            }
+        &--highlight {
+          color: #ef5b70;
+          margin-left: 6px;
         }
+      }
     }
+  }
 }
-
 
 .quantity-control {
-    margin-left: 24px;
-    
-    .quantity-control__decrease,
-    .quantity-control__increase {
-        cursor: pointer;
+  margin-left: 24px;
 
-        &:hover {
-            
-        }
-    }
+  .quantity-control__decrease,
+  .quantity-control__increase {
+    cursor: pointer;
 
-    .quantity-control__value {
-        border: 2px solid #eaeaea;
-        padding: 1px 17px;
+    &:hover {
     }
+  }
+
+  .quantity-control__value {
+    border: 2px solid #eaeaea;
+    padding: 1px 17px;
+  }
 }
-
 
 .cart__actions {
-    button {
-        &:hover {
-            
-        }
-
-        &:focus {
-            
-        }
+  button {
+    &:hover {
     }
+
+    &:focus {
+    }
+  }
 }
 .cart {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: relative;
 }
 
 .cart__left {
-    flex: 2;
-    min-width: 300px;
-    margin-right: 20px;
+  flex: 2;
+  min-width: 300px;
+  margin-right: 20px;
 }
 
 .cart__shipping-address {
-    flex: 1;
-    min-width: 300px;
+  flex: 1;
+  min-width: 300px;
 }
 
 .cart__close-btn {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    z-index: 10;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 10;
 }
-
 
 .cart__right-column {
-    .cart__total {
-        
-    }
+  .cart__total {
+  }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .email__sending {
   position: relative;
@@ -418,16 +378,15 @@ summary::-webkit-details-marker {
     background-color: rgba(244, 244, 244, 0.7);
     z-index: 0;
   }
+
   &__face {
-  margin-top: 97px;
-  z-index: 1;
-  &__img {
-    margin-bottom: 30px;
+    margin-top: 97px;
+    z-index: 1;
+    &__img {
+      margin-bottom: 30px;
+    }
   }
 }
-}
-
-
 
 .email__quote {
   width: 320px;
@@ -461,6 +420,10 @@ summary::-webkit-details-marker {
   border-radius: 30px 0px 0px 30px;
   border: none;
   background-color: #e1e1e1;
+  &:focus {
+    border-color: #a4a4a4;
+    outline: none;
+  }
   &__button {
     padding: 0px 7px 0px 8px;
     color: #fff;
@@ -505,12 +468,6 @@ summary::-webkit-details-marker {
   height: 32px;
 }
 
-
-
-
-
-
-
 @media (max-width: 768px) {
   .header__left {
     margin-left: 32px;
@@ -518,35 +475,29 @@ summary::-webkit-details-marker {
   .header__right {
     margin-right: 32px;
   }
-  .head__heading{
+  .head__heading {
     margin-left: 16px;
   }
 
-
-  
   .cart {
     flex-direction: column; /* Переводим контейнер в колонку, чтобы элементы располагались вертикально */
     padding: 0;
     margin: 59px 0px 128px 0px;
-    
-    
-    
   }
-  .cart .cart__button__left{
-        margin-right: 48px;
-    }
-  .cart__left-column__two{
-    flex-grow:1
+  .cart .cart__button__left {
+    margin-right: 48px;
+  }
+  .cart__left-column__two {
+    flex-grow: 1;
   }
 
   .cart__left {
-       max-width: 734px; /* Устанавливаем максимальную ширину для cart__left */
+    max-width: 734px; /* Устанавливаем максимальную ширину для cart__left */
     width: 100%; /* Позволяем элементу занимать всю доступную ширину, но не больше 734px */
     margin: 0 auto; /* Центрируем cart__left */
   }
 
-  .cart-item{
-    
+  .cart-item {
   }
 
   .cart__shipping-address {
@@ -554,7 +505,7 @@ summary::-webkit-details-marker {
     margin-top: 64px;
     order: 2; /* Меняем порядок элементов */
     flex-direction: row; /* Меняем на строковое расположение */
-    
+
     justify-content: space-between; /* Располагаем элементы по бокам */
     align-items: flex-start; /* Выравнивание по верхнему краю */
     margin-left: 16px;
@@ -563,16 +514,16 @@ summary::-webkit-details-marker {
   .cart__button {
     margin-bottom: 20px; /* Отступ снизу для кнопок */
   }
-  .cart__button__left{
+  .cart__button__left {
     margin-right: 48px;
   }
-.cart .shipping-address__rectangle {
+  .cart .shipping-address__rectangle {
     margin-top: 40px;
-}
-.cart .shipping-address__input{
+  }
+  .cart .shipping-address__input {
     padding: 13px 0px 13px 16px;
     width: 344px;
-}
+  }
   .shipping-address__rectangle {
     margin-top: 0;
     margin-left: 12px;
@@ -580,43 +531,32 @@ summary::-webkit-details-marker {
     width: 360px;
   }
 
-
-    .shipping-address__field {
+  .shipping-address__field {
     width: 360px;
   }
-  .proceed__checkout{
+  .proceed__checkout {
     margin-left: 44px;
   }
   .cart__shipping-address,
   .shipping-address__rectangle {
     display: flex; /* Используем флексбокс для выравнивания */
     flex: 1;
-   
   }
 
   /* Дополнительные стили для полей ввода и кнопок */
   .shipping-address__input,
   .shipping-address__submit-button {
-    
   }
 
-  .shipping-address__input{
+  .shipping-address__input {
     width: 360px;
   }
   .shipping-address__submit-button {
-  
     display: flex;
   }
 
-
   .sale__text {
   }
-
-
-
-
-
-
 
   .product {
   }
@@ -650,94 +590,78 @@ summary::-webkit-details-marker {
   }
 }
 
-
-
-
-
-
 @media (max-width: 426px) {
   .header__link-site {
     display: none;
   }
-  .head center{
+  .head center {
     text-align: center;
   }
-    .head__heading {
+  .head__heading {
     text-align: center; /* Центрируем текст */
-    margin-left: 0;     /* Убираем отступ слева */
-    margin-right: 0;    /* Убираем отступ справа */
-    width: 100%;        /* Делаем ширину элемента на 100% */
+    margin-left: 0; /* Убираем отступ слева */
+    margin-right: 0; /* Убираем отступ справа */
+    width: 100%; /* Делаем ширину элемента на 100% */
   }
 
-
-
-
-  .cart{
+  .cart {
     margin: 39px 0px 96px 0px;
   }
-.cart-item{
+  .cart-item {
     width: 358px;
-}
-.cart .cart__left-column{
+  }
+  .cart .cart__left-column {
     margin-bottom: 0;
-}
-.cart__left-column__two{
-    margin-top:32px ;
-}
-  .cart-item .cart-item__image{
+  }
+  .cart__left-column__two {
+    margin-top: 32px;
+  }
+  .cart-item .cart-item__image {
     width: 143px;
     height: 188px;
   }
-  .cart-item .cart-item__details .cart-item__title{
+  .cart-item .cart-item__details .cart-item__title {
     font-weight: 400;
     font-size: 16px;
   }
-  .cart-item .cart-item__details{
+  .cart-item .cart-item__details {
     font-size: 14px;
   }
-  .cart-item .cart-item__details .cart-item__attributes{
+  .cart-item .cart-item__details .cart-item__attributes {
     margin-top: 25px;
   }
 
- .cart .cart__button__left{
+  .cart .cart__button__left {
     margin-right: 8px;
-}
+  }
 
-.cart__button button{
+  .cart__button button {
     width: 175px;
     height: 33px;
     font-size: 12px;
     text-align: center;
-    
 
     padding: 17px 21px 16px 39px;
-    display: flex;      /* Используем flex для более гибкого выравнивания */
-    justify-content: center; /* Центрируем содержимое кнопки */
-    align-items: center;     /* Центрируем содержимое кнопки по вертикали */
-   
-
-
-    
-}
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
   .cart__shipping-address {
-    flex-direction: column; 
-    align-items: flex-start; 
+    flex-direction: column;
+    align-items: flex-start;
     margin-left: 16px;
     order: 2;
-  
-     margin: 0 auto;
+    margin: 0 auto;
     margin-top: 48px;
-    
-    
   }
-  .cart .cart__left-column__two{
+  .cart .cart__left-column__two {
     margin-bottom: 0;
   }
 
   .shipping-address__field {
     width: 360px;
-    margin-bottom: 0; 
+    margin-bottom: 0;
   }
 
   .cart .shipping-address__rectangle {
@@ -745,28 +669,21 @@ summary::-webkit-details-marker {
     width: 360px;
     height: 214px;
     text-align: end;
-    margin-top: 48px; 
+    margin-top: 48px;
     margin-left: 0px;
-    
   }
 
   .shipping-address__input {
     width: 344px;
     padding: 13px 0px 13px 16px;
   }
-  .proceed__checkout{
+  .proceed__checkout {
     margin-bottom: 42px;
   }
-.cart__button{
+  .cart__button {
     margin-top: 30px;
     margin-bottom: 0px;
-}
- 
-
-
-
-
-
+  }
 
   .advantages {
   }

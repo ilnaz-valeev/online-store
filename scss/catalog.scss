@@ -56,11 +56,14 @@ summary {
   &__right {
     gap: 33px;
   }
+  &__right img {
+    cursor: pointer;
+  }
 }
 
 .head {
   min-height: 148px;
-  background: #F8F3F4;
+  background: #f8f3f4;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -71,7 +74,7 @@ summary {
     font-weight: 400;
     font-size: 24px;
     line-height: 29px;
-    color: #F16D7F;
+    color: #f16d7f;
   }
 }
 
@@ -91,11 +94,11 @@ summary {
   &__link {
     font-weight: 400;
     font-size: 14px;
-    color: #6F6E6E;
+    color: #6f6e6e;
     transition: color 0.3s ease;
 
     &:hover {
-      color: #F16D7F;
+      color: #f16d7f;
     }
   }
 
@@ -120,15 +123,15 @@ summary {
   }
 
   &[open] {
-    background: #FFFFFF;
+    background: #ffffff;
     box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
 
     & .filter__summary {
-      color: #F16D7F;
+      color: #f16d7f;
     }
 
     & .filter__img path {
-      fill: #F16D7F;
+      fill: #f16d7f;
     }
   }
 
@@ -138,14 +141,14 @@ summary {
     &-summary {
       font-weight: 400;
       font-size: 14px;
-      color: #6F6E6E;
+      color: #6f6e6e;
       padding: 8px 11px 11px;
-      border-left: 5px solid #F16D7F;
-      border-bottom: 1px solid #EBEBEB;
+      border-left: 5px solid #f16d7f;
+      border-bottom: 1px solid #ebebeb;
       transition: color 0.3s ease;
 
       &[open] {
-        color: #F16D7F;
+        color: #f16d7f;
       }
     }
   }
@@ -174,7 +177,7 @@ summary {
     gap: 6px;
     width: 79px;
     padding: 7px 9px 11px;
-    background: #FFFFFF;
+    background: #ffffff;
     box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
     z-index: 1;
     top: 22px;
@@ -194,7 +197,7 @@ summary {
 }
 
 .pink__a {
-  color: #F16D7F;
+  color: #f16d7f;
   font-weight: 400;
 }
 
@@ -328,13 +331,13 @@ summary {
     cursor: pointer;
 
     &:hover {
-      color: #F16D7F;
+      color: #f16d7f;
       text-decoration: none;
     }
 
     &.active {
       font-weight: bold;
-      color: #F16D7F;
+      color: #f16d7f;
     }
   }
 
@@ -359,23 +362,23 @@ summary {
   justify-content: space-around;
   width: 100%;
   &::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(244, 244, 244, 0.7);
-  z-index: 0;
-}
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(244, 244, 244, 0.7);
+    z-index: 0;
+  }
 }
 
 .email__face {
   margin-top: 97px;
   z-index: 1;
   &__img {
-  margin-bottom: 30px;
-}
+    margin-bottom: 30px;
+  }
 }
 
 .email__quote {
@@ -384,9 +387,9 @@ summary {
 
   font-size: 20px;
   &__italic {
-  font-style: italic;
-  font-size: 20px;
-}
+    font-style: italic;
+    font-size: 20px;
+  }
 }
 
 .email__subscribe {
@@ -399,9 +402,9 @@ summary {
   font-weight: 700;
   font-size: 24px;
   &__light {
-  font-weight: 400;
-  font-size: 18px;
-}
+    font-weight: 400;
+    font-size: 18px;
+  }
 }
 
 .email__field {
@@ -411,15 +414,15 @@ summary {
   border: none;
   background-color: #e1e1e1;
   &__button {
-  padding: 0px 7px 0px 8px;
-  color: #fff;
-  width: 100px;
-  height: 49px;
-  border-radius: 0px 30px 30px 0px;
-  border: none;
-  background-color: #f16d7f;
-  cursor: pointer;
-}
+    padding: 0px 7px 0px 8px;
+    color: #fff;
+    width: 100px;
+    height: 49px;
+    border-radius: 0px 30px 30px 0px;
+    border: none;
+    background-color: #f16d7f;
+    cursor: pointer;
+  }
 }
 
 .social__networks {
@@ -438,16 +441,15 @@ summary {
   align-items: center;
   gap: 8px;
   &__block {
-  width: 32px;
-  height: 32px;
-  align-content: center;
-  background-color: #fff;
-  cursor: pointer;
+    width: 32px;
+    height: 32px;
+    align-content: center;
+    background-color: #fff;
+    cursor: pointer;
     &:hover svg path {
-    fill: #F16D7F; 
+      fill: #f16d7f;
     }
-}
-
+  }
 }
 .background__block {
   background-color: #fff;
@@ -455,13 +457,6 @@ summary {
   height: 32px;
 }
 
-
-
-
-
-
-
-
 @media (max-width: 768px) {
   .header__left {
     margin-left: 32px;
@@ -469,26 +464,24 @@ summary {
   .header__right {
     margin-right: 32px;
   }
-  .head__heading{
+  .head__heading {
     margin-left: 16px;
-
   }
-  .breadcrumb__link{
+  .breadcrumb__link {
     margin-right: 16px;
   }
 
-
   .product-box {
     padding-bottom: 32px;
-      &__content {
-    margin-top: 72px;
-    grid-template-columns: 1fr 1fr;
-    gap: 16px;
-    margin-right: 8px;
-    margin-left: 8px;
+    &__content {
+      margin-top: 72px;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-right: 8px;
+      margin-left: 8px;
+    }
   }
-  }
-  .product__none{
+  .product__none {
     display: none;
   }
   .advantages__item {
@@ -503,29 +496,23 @@ summary {
     margin-top: 1px;
     height: auto;
   }
-
 }
-
-
-
-
 
 @media (max-width: 426px) {
   .header__link-site {
     display: none;
   }
-  .head{
+  .head {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
   }
 
-  .sort__summary{
+  .sort__summary {
     font-size: 10px;
   }
 
-  .breadcrumb{
+  .breadcrumb {
     margin-top: 32px;
   }
   .product-box__content {
@@ -558,12 +545,7 @@ summary {
     margin-top: 43px;
     justify-content: center;
   }
-
-
-  
 }
-
-
 
 @media (max-width: 768px) {
   .header__left {
@@ -572,11 +554,10 @@ summary {
   .header__right {
     margin-right: 32px;
   }
-  .head__heading{
+  .head__heading {
     margin-left: 16px;
-
   }
-  .breadcrumb__link{
+  .breadcrumb__link {
     margin-right: 16px;
   }
 
@@ -590,7 +571,7 @@ summary {
   .product-box {
     padding-bottom: 32px;
   }
-  .product__none{
+  .product__none {
     display: none;
   }
   .advantages__item {
@@ -605,29 +586,23 @@ summary {
     margin-top: 1px;
     height: auto;
   }
-
 }
-
-
-
-
 
 @media (max-width: 426px) {
   .header__link-site {
     display: none;
   }
-  .head{
+  .head {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
   }
 
-  .sort__summary{
+  .sort__summary {
     font-size: 10px;
   }
 
-  .breadcrumb{
+  .breadcrumb {
     margin-top: 32px;
   }
   .product-box__content {
@@ -660,22 +635,16 @@ summary {
     margin-top: 43px;
     justify-content: center;
   }
-
-
-  
 }
-
-
 
 @media (max-width: 320px) {
   .product__add {
     top: 150px;
     left: 80px;
   }
-.sort__details img{
+  .sort__details img {
     padding-left: 2px;
   }
-  .filter__summary{
-    
+  .filter__summary {
   }
 }
