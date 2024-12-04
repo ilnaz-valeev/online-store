@@ -535,6 +535,21 @@ summary::-webkit-details-marker {
   height: 32px;
 }
 
+
+@media (max-wdth: 1024px) {
+    .header__left{
+        margin-left: 16px;
+    }
+    .header__right{
+        margin-right: 16px;
+    }
+    .head__heading{
+        margin-left: 16px;
+    }
+    .breadcrumb{
+        margin-right: 16px;
+    }
+}
 @media (max-width: 768px) {
   .header__left {
     margin-left: 32px;

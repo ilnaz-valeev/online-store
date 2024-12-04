@@ -85,14 +85,9 @@ summary::-webkit-details-marker {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
-  gap: 20px;
 
-  // position: relative;
-  // margin-top: 96px;
-  // margin-bottom: 250px;
-  // width: 652px;
-  // display: flex;
-  // justify-content: space-between;
+
+
 
   &__left {
     display: flex;
@@ -259,10 +254,11 @@ summary::-webkit-details-marker {
   }
 }
 
-// Стили для товара в корзине
+
 .cart-item {
   display: flex;
   align-items: center;
+  width: 100%;
 
   .cart-item__image {
     flex-shrink: 0;
@@ -468,6 +464,47 @@ summary::-webkit-details-marker {
   height: 32px;
 }
 
+@media (max-width: 1024px){
+    .head__heading{
+        margin-left: 16px;
+    }
+    .breadcrumb{
+        margin-right: 16px;
+    }
+    .header__left{
+        margin-left: 16px;
+    }
+    .header__right{
+        margin-right: 16px;
+    }
+    .cart__left{
+        max-width: 555px;
+        margin-right: 10px;
+    }
+    .cart .cart__button__left{
+        margin-right: 80px;
+    }
+    .cart{
+       padding: 0;
+       margin-bottom: 80px;
+       margin-top: 50px;
+       
+       
+    }
+    .cart__left{
+        
+    }
+    .shipping-address__header{
+        width: 200px;
+    }
+    .cart__shipping-address{
+        max-width: 400px;
+        margin-left: 0;
+    }
+    .shipping-address__field{
+        max-width: 400px;
+    }
+}
 @media (max-width: 768px) {
   .header__left {
     margin-left: 32px;
@@ -480,7 +517,7 @@ summary::-webkit-details-marker {
   }
 
   .cart {
-    flex-direction: column; /* Переводим контейнер в колонку, чтобы элементы располагались вертикально */
+    flex-direction: column; 
     padding: 0;
     margin: 59px 0px 128px 0px;
   }
@@ -492,22 +529,22 @@ summary::-webkit-details-marker {
   }
 
   .cart__left {
-    max-width: 734px; /* Устанавливаем максимальную ширину для cart__left */
-    width: 100%; /* Позволяем элементу занимать всю доступную ширину, но не больше 734px */
-    margin: 0 auto; /* Центрируем cart__left */
+    max-width: 734px; 
+    width: 100%; 
+    margin: 0 auto; 
   }
 
   .cart-item {
   }
 
   .cart__shipping-address {
-    max-width: 100%; /* Ширина блока с адресом */
+    max-width: 100%; 
     margin-top: 64px;
-    order: 2; /* Меняем порядок элементов */
-    flex-direction: row; /* Меняем на строковое расположение */
+    order: 2; 
+    flex-direction: row;
 
-    justify-content: space-between; /* Располагаем элементы по бокам */
-    align-items: flex-start; /* Выравнивание по верхнему краю */
+    justify-content: space-between; 
+    align-items: flex-start;
     margin-left: 16px;
   }
 
@@ -539,11 +576,11 @@ summary::-webkit-details-marker {
   }
   .cart__shipping-address,
   .shipping-address__rectangle {
-    display: flex; /* Используем флексбокс для выравнивания */
+    display: flex; 
     flex: 1;
   }
 
-  /* Дополнительные стили для полей ввода и кнопок */
+  
   .shipping-address__input,
   .shipping-address__submit-button {
   }

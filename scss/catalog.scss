@@ -456,7 +456,26 @@ summary {
   width: 31px;
   height: 32px;
 }
-
+@media (max-width: 1024px){
+    .head__heading{
+        margin-left: 16px;
+    }
+    .breadcrumb{
+        margin-right: 16px;
+    }
+    .filter{
+        margin-left: 136px;
+    }
+    .product__none{
+        display: none;
+    }
+    .header__left{
+        margin-left: 16px;
+    }
+    .header__right{
+        margin-right: 16px;
+    }
+}
 @media (max-width: 768px) {
   .header__left {
     margin-left: 32px;

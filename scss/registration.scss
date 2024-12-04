@@ -303,7 +303,26 @@ summary::-webkit-details-marker {
 }
 
 
-
+@media (max-width: 1024px) {
+    .header__left{
+        margin-left: 16px;
+    }
+    .header__right{
+        margin-right: 16px;
+    }
+    .head__heading{
+        margin-left: 16px;
+    }
+    .breadcrumb{
+        margin-right: 16px;
+    }
+    .content__left{
+        margin-left: 16px;
+    }
+    .content__rigth{
+        margin-left: 50px;
+    }
+}
 
 @media (max-width: 768px) {
   .header__left {
