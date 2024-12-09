@@ -489,6 +489,9 @@ summary {
   .breadcrumb__link {
     margin-right: 16px;
   }
+  .filter{
+    margin-left: 8px;
+  }
 
   .product-box {
     padding-bottom: 32px;
@@ -530,7 +533,9 @@ summary {
   .sort__summary {
     font-size: 10px;
   }
-
+  .sort{
+    margin-right: 10px;
+  }
   .breadcrumb {
     margin-top: 32px;
   }
@@ -663,6 +668,9 @@ summary {
   }
   .sort__details img {
     padding-left: 2px;
+  }
+  .sort{
+    gap: 3px;
   }
   .filter__summary {
   }

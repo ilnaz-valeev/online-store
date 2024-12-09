@@ -646,6 +646,14 @@ summary::-webkit-details-marker {
   }
   .cart-item {
     width: 358px;
+    margin-left: 10px;
+    
+  }
+  .cart-item img{
+    height: 188px;
+  }
+  .cart__left{
+    
   }
   .cart .cart__left-column {
     margin-bottom: 0;
@@ -766,4 +774,26 @@ summary::-webkit-details-marker {
     top: 150px;
     left: 80px;
   }
+  .cart-item{
+    width: 300px;
+  }
+  .cart__button button{
+    width: 155px;
+  }
+  .cart .shipping-address__input{
+    width: 296px;
+  }
+  .shipping-address__field{
+    width: 300px;
+  }
+  .cart .shipping-address__rectangle{
+    width: 310px;
+  }
+  .cart .shipping-address__rectangle .mini__line{
+    margin-left: 20px;
+  }
+  .proceed__checkout{
+    margin-left: 20px;
+  }
 }
+
